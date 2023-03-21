@@ -8,7 +8,7 @@ const socketController = () => {
 
         console.log('Cliente Conectado', socket.id);
 
-        socket.on('disconnect', () =>{
+        socket.on('disconnect', () => {
             console.log('Cliente desconectado', socket.id);
         });
 
@@ -26,6 +26,6 @@ const socketController = () => {
 
 
 
-module.exports  = {
+module.exports = {
     socketController
 }
